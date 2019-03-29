@@ -1,0 +1,57 @@
+{
+    "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.3/MicrosoftTeams.schema.json",
+    "manifestVersion": "1.3",
+    "version": "1.0.0",
+    "id": "",
+    "packageName": "com.silverchair.arosenberger.msteams-powergifs",
+    "developer": {
+        "name": "Aaron Rosenberger",
+        "websiteUrl": "https://confluence.silverchair.com/spaces/viewspace.action?key=~arosenberger",
+        "privacyUrl": "https://confluence.silverchair.com/spaces/viewspace.action?key=~arosenberger",
+        "termsOfUseUrl": "https://confluence.silverchair.com/spaces/viewspace.action?key=~arosenberger"
+    },
+    "icons": {
+        "color": "color.gif",
+        "outline": "outline.gif"
+    },
+    "name": {
+        "short": "PowerGifs",
+        "full": "PowerGifs"
+    },
+    "description": {
+        "short": "React with animated gifs without limiting yourself to Giphy's poor selection.",
+        "full": "React with a link to your own animated gif, or a gif returned from searching any site besides Giphy. Have true control over your reactions without limiting yourself to the same 3 low-quality gifs from some reality TV show."
+    },
+    "accentColor": "#8B8B8B",
+    "composeExtensions": [
+        {
+            "botId": "",
+            "canUpdateConfiguration": true,
+            "commands": [
+                {
+                    "id": "partyParrot",
+                    "description": "PARTY OR DIE",
+                    "title": "Cult of the Party Parrot",
+                    "initialRun": true,
+                    "parameters": [
+                        {
+                            "name": "searchKeyword",
+                            "description": "Search for a Party Parrot",
+                            "title": "Search"
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "permissions": [
+        "identity",
+        "messageTeamMembers"
+    ],
+    "validDomains": [
+        "giphy.com",
+        "gfycat.com",
+        "imgur.com",
+        "cultofthepartyparrot.com"
+    ]
+}
